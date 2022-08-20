@@ -1,19 +1,15 @@
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby-starter-tailwind-typescript"
-  },
   plugins: [
     "gatsby-plugin-typescript",
     "gatsby-plugin-postcss",
     {
-      resolve: `gatsby-plugin-sass`,
       options: {
         postCssPlugins: [
           require("tailwindcss"),
           require("./tailwind.config.js") // Optional: Load custom Tailwind CSS configuration
         ]
-      }
+      },
+      resolve: `gatsby-plugin-sass`
     },
     "gatsby-plugin-image",
     // enable google-analytics plugin
@@ -26,20 +22,24 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png"
-      }
+      },
+      resolve: "gatsby-plugin-manifest"
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      __key: "images",
       options: {
         name: "images",
         path: "./src/images/"
       },
-      __key: "images"
+      resolve: "gatsby-source-filesystem"
     }
-  ]
+  ],
+  siteMetadata: {
+    siteUrl: "https://www.yourdomain.tld",
+    title: "gatsby-starter-tailwind-typescript"
+  }
 }

@@ -1,18 +1,18 @@
 {
+  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "esnext",
-    "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2017"],
-    "strict": true,
-    "noEmit": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "useDefineForClassFields": true,
+    "types": ["react/next", "react-dom/next"],
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "isolatedModules": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "removeComments": false,
-    "preserveConstEnums": true
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "public", ".cache"]

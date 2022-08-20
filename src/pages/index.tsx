@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react"
+import React from "react"
 
-const IndexPage: React.FC = (): ReactElement => {
+const index = (): JSX.Element => {
   return <main>Hello, World</main>
 }
 
-export default IndexPage
+export default index

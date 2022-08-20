@@ -1,7 +1,9 @@
-import React, { ReactElement } from "react"
+/* eslint-disable canonical/filename-match-regex */
+/* eslint-disable canonical/filename-match-exported */
+import React from "react"
 
-const NotFoundPage: React.FC = (): ReactElement => {
+const NotFound = (): JSX.Element => {
   return <main>404, Not found</main>
 }
 
-export default NotFoundPage
+export default NotFound

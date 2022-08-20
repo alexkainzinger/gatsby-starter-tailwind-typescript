@@ -1,0 +1,36 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/.yarn": true,
+    "**/.git": true,
+    "**/*.lock": true,
+    "**/.cache": true,
+    "**/public": true
+  },
+  "files.watcherExclude": {
+    "**/.rpt2_cache/**": true,
+    "**/tmp/**": true,
+    "**/.yarn": true,
+    "**/.git": true,
+    "**/*.cjs": true,
+    "**/*.lock": true,
+    "**/.cache": true,
+    "**/public": true
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "git.autofetch": true,
+  "javascript.validate.enable": false,
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.validate": ["javascript", "javascriptreact", "json", "typescript", "typescriptreact"],
+  "json.format.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false
+}
